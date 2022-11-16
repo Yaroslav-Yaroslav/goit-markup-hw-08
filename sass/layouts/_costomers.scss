@@ -1,0 +1,32 @@
+.costomers-list {
+  display: flex;
+  gap: 30px;
+
+  &__item {
+    width: calc((100% - 150px) / 6);
+    height: 92px;
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}
+.costomers-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: #afb1b8;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+  }
+}

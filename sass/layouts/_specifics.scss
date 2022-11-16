@@ -1,0 +1,28 @@
+.specifics-list {
+  display: flex;
+  gap: 30px;
+
+  &__item {
+    width: calc((100% - 60px) / 3);
+  }
+
+  &__thumb {
+    position: relative;
+  }
+
+  &-list__label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 27px 0;
+    display: flex;
+    justify-content: center;
+
+    color: var(--white-color);
+    background-color: rgba(47, 48, 58, 0.8);
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+}
