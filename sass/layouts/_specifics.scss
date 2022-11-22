@@ -1,3 +1,10 @@
+.specifics {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  display: block;
+  padding-top: 0;
+}
 .specifics-list {
   display: flex;
   gap: 30px;
@@ -10,7 +17,7 @@
     position: relative;
   }
 
-  &-list__label {
+  &__label {
     position: absolute;
     bottom: 0;
     left: 0;

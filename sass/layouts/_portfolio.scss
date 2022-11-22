@@ -1,8 +1,18 @@
 .filters-list {
   display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  row-gap: 15px;
+  max-width: 326px;
+  margin-bottom: 40px;
+  @include tablet {
+    max-width: 100%;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @include desktop {
+    margin-bottom: 50px;
+  }
 }
 
 .projects {
@@ -11,10 +21,17 @@
   gap: 30px;
 
   &__item {
-    width: calc((100% - 60px) / 3);
+    width: 100%;
+    @include tablet {
+      @include calc(2);
+    }
+    @include desktop {
+      @include calc(3);
+    }
   }
 
   &__wrap {
+    flex-grow: 1;
     padding: 20px 24px;
     border-bottom: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
@@ -43,7 +60,7 @@
   &__label {
     position: absolute;
     top: 0;
-    transform: translateY(101%);
+    transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     color: var(--white-color);
@@ -57,8 +74,9 @@
 }
 
 .projects__link {
-  display: block;
-
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,

@@ -14,15 +14,24 @@ body {
   text-decoration: none;
 }
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &__title {
- margin-bottom: 50px;
+    margin-bottom: 30px;
 
-  color: var(--title-text-color);
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
+    color: var(--title-text-color);
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+    @include desktop {
+      margin-bottom: 50px;
+      font-size: 36px;
+      line-height: 1.17;
+    }
   }
 }

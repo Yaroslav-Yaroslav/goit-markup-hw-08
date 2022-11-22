@@ -97,7 +97,13 @@
 }
 .form__checkbox-text {
   padding-left: 36px;
+  font-size: 12px;
   line-height: 1.71;
+
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .form__contract-link {
   color: var(--accent-color);

@@ -1,12 +1,16 @@
-.section--features {
-  padding-bottom: 0;
-}
 .features-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 
   &__item {
-  width: calc((100% - 90px) / 4);
+  width: 100%;
+  @include tablet {
+    @include calc(2)
+  }
+  @include desktop {
+    @include calc(4)
+  }
 }
 
 &__icon-wrap {

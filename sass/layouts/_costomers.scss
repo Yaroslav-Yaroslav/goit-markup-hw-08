@@ -1,10 +1,17 @@
 .costomers-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 
   &__item {
-    width: calc((100% - 150px) / 6);
     height: 92px;
+    @include calc(2);
+    @include tablet {
+      @include calc(3);
+    }
+    @include desktop {
+      @include calc(6);
+    }
   }
 
   &__icon {
