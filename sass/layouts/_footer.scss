@@ -19,7 +19,7 @@
     display: flex;
 
     align-items: baseline;
-    gap: 165px;
+    justify-content: space-around;
   }
 
   @include desktop {
@@ -31,12 +31,8 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
-  @include tablet {
-    padding-left: 76px;
-  }
 
   @include desktop {
-    padding-left: 0;
     width: 231px;
   }
 }
@@ -119,6 +115,7 @@
   }
 
   &__input {
+    padding-left: 16px;
     max-width: 450px;
     height: 50px;
     @include tablet {
@@ -126,7 +123,6 @@
     }
     @include desktop {
       width: 358px;
-      padding-left: 16px;
       margin-right: 12px;
     }
 

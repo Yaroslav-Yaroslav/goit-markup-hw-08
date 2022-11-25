@@ -159,9 +159,18 @@
   line-height: 1.17;
 
   &--accent {
+    @media screen and (max-width: 479px) {
+      color: var(--accent-color);
+      font-size: 26px;
+      line-height: 1.18;
+      margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      font-size: 34px;
+    }
     @media screen and (max-width: 767px) {
       color: var(--accent-color);
-      font-size: 34px;
       line-height: 1.18;
       margin-bottom: 32px;
     }
@@ -200,9 +209,17 @@
   &__link {
     color: var(--accent-color);
     font-weight: 500;
-    font-size: 18px;
+
     line-height: 1.22;
     letter-spacing: 0.02em;
+
+    @media screen and (max-width: 479px) {
+      font-size: 12px;
+    }
+
+    @media screen and(min-width:480px) and (max-width: 767px) {
+      font-size: 18px;
+    }
   }
 }
 
