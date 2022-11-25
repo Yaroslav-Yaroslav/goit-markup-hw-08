@@ -34,11 +34,19 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  @include retina {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero-mob-2x.jpg);
+  }
 
   @include tablet {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/hero-tab.jpg);
     max-width: 768px;
+    @include retina {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero-tab-2x.jpg);
+    }
   }
 
   @include desktop {
@@ -46,5 +54,9 @@
       url(../images/hero-desk.jpg);
     max-width: 1600px;
     height: 600px;
+    @include retina {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero-desk-2x.jpg);
+    }
   }
 }
