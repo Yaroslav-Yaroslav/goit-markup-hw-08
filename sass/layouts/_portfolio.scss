@@ -69,7 +69,15 @@
     line-height: 1.56;
     width: 100%;
     height: 100%;
-    padding: 63px 24px;
+    padding: 77px 24px;
+
+    @include tablet {
+      padding: 49px 24px;
+    }
+
+    @include desktop {
+      padding: 63px 24px;
+    }
   }
 }
 
