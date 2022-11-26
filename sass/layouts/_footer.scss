@@ -32,8 +32,12 @@
     margin-bottom: 60px;
   }
 
+  @include tablet {
+    text-align: center;
+  }
   @include desktop {
     width: 231px;
+    text-align: start;
   }
 }
 .footer {

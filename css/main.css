@@ -674,9 +674,15 @@ body {
     margin-bottom: 60px;
   }
 }
+@media screen and (min-width: 768px) {
+  .address-wrap {
+    text-align: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .address-wrap {
     width: 231px;
+    text-align: start;
   }
 }
 
@@ -897,7 +903,17 @@ body {
   line-height: 1.56;
   width: 100%;
   height: 100%;
-  padding: 63px 24px;
+  padding: 77px 24px;
+}
+@media screen and (min-width: 768px) {
+  .projects__label {
+    padding: 49px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects__label {
+    padding: 63px 24px;
+  }
 }
 
 .projects__link {
